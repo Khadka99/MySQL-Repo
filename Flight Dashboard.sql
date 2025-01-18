@@ -13,10 +13,10 @@ SELECT Source,COUNT(*) FROM (SELECT Source FROM revision.flights
 							SELECT Destination FROM revision.flights) t
 GROUP BY t.Source
 ORDER BY COUNT(*) DESC;
+
 SELECT Date_of_Journey,COUNT(*) FROM revision.flights
 GROUP BY Date_of_Journey;
 
-SELECT * FROM revision.flights;
 SELECT dep_time,COUNT(*),Price FROM Revision.flights
 GROUP BY dep_time,Price
 ORDER BY price DESC;
